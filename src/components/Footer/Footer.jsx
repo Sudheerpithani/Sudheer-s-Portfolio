@@ -21,9 +21,10 @@ const Footer = () => {
           {[
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
+            { name: "Certificates", id: "certificates" },
             { name: "Experience", id: "experience" },
             { name: "Projects", id: "projects" },
-            { name: "Education", id: "education" },
+            // { name: "Education", id: "education" },
           ].map((item, index) => (
             <button
               key={index}
@@ -39,8 +40,8 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
             { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/sudheer-pithani-564806322" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/urstruly_sudheer7/" },
             { icon: <FaGithub />, link: "https://github.com/Sudheerpithani" },
+            { icon: <FaInstagram />, link: "https://www.instagram.com/urstruly_sudheer7/" },
             
           ].map((item, index) => (
             <a
