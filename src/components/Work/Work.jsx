@@ -17,7 +17,6 @@ const Work = () => {
       id="work"
       className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative"
     >
-
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">PROJECTS</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
@@ -26,7 +25,6 @@ const Work = () => {
           and experience in various technologies
         </p>
       </div>
-
 
       <div className="grid gap-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
@@ -106,15 +104,29 @@ const Work = () => {
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="w-1/2 bg-gray-800 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
                   >
                     View Code
                   </a>
                   <a
-                    href={selectedProject.webapp}
-                    target="_blank"
+                    href={
+                      selectedProject.webapp &&
+                      selectedProject.webapp.trim() !== ""
+                        ? selectedProject.webapp
+                        : "#"
+                    }
+                    target={
+                      selectedProject.webapp &&
+                      selectedProject.webapp.trim() !== ""
+                        ? "_blank"
+                        : "_self"
+                    }
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className={`w-1/2 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center 
+                      ${selectedProject.webapp && selectedProject.webapp.trim() !== ""
+                        ? "bg-purple-600 hover:bg-purple-800 cursor-pointer"
+                        : "bg-gray-400 cursor-not-allowed pointer-events-none"
+                      }`}
                   >
                     View Live
                   </a>

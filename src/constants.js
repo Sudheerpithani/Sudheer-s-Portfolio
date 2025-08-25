@@ -30,7 +30,9 @@ import godiLogo from './assets/education_logo/godischool.jpg';
 
 // Project Section Logo's
 import todoLogo from './assets/work_logo/todo.png';
-import My_portfolio from './assets/work_logo/My_portfolio.png';
+import Complaint_Care from './assets/work_logo/Complaint_Care.png';
+import Weather_App from './assets/work_logo/Weather_App.png';
+
 
 // Certificates Section Logo's
 import reactCert from './assets/certificates/React_Certificate.png';
@@ -158,13 +160,23 @@ export const SkillsInfo = [
     },
     {
       id: 1,
-      title: "My Portfolio",
+      title: "Complaint Care",
       description:
-        "The Personal Portfolio Website is a modern, responsive web application developed using React.js and styled with Tailwind CSS. It serves as an interactive platform to showcase my professional profile, including skills, projects, education, and certifications.",
-      image: My_portfolio,
-      tags: ["React JS", "Tailwind CSS"],
-      github: "https://github.com/Sudheerpithani/Sudheer-s-Portfolio",
-      webapp: "https://sudheerpithani.github.io/Sudheer-s-Portfolio",
+        "Developed a full-stack MERN application that allows users to register and track complaints, while admins manage and resolve them via a secure dashboard.",
+      image: Complaint_Care,
+      tags: ["React JS","Node JS","Express JS","MongoDB","CSS","Bootstrap","Compass"],
+      github: "https://github.com/Sudheerpithani/ComplaintCare-MERN",
+      webapp: "",
+    },
+    {
+      id: 2,
+      title: "Weather App",
+      description:
+        "Developed a responsive web application using React JS and CSS that integrates with a weather API to display real-time temperature, humidity, and weather conditions with a user-friendly interface.",
+      image: Weather_App,
+      tags: ["React JS","CSS","REST API"],
+      github: "https://github.com/Sudheerpithani/Weather_App",
+      webapp: "https://sudheerpithani.github.io/Weather_App/",
     },
   ];  
 
