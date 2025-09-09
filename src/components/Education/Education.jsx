@@ -10,7 +10,7 @@ const Education = () => {
 
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
+        <div className="w-32 h-1 bg-blue-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
           My education has been a journey of learning and development. Here are the details of my academic background
         </p>
@@ -29,7 +29,7 @@ const Education = () => {
             }`}
           >
    
-            <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10 logo">
+            <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#4548ecff] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10 logo">
               <img
                 src={edu.img}
                 alt={edu.school}

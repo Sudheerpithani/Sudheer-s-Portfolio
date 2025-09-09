@@ -56,11 +56,11 @@ const Navbar = () => {
       <div className="text-white py-5 flex justify-between items-center">
 
         <div className="text-lg font-semibold cursor-pointer">
-          <span className="text-[#8245ec]">&lt;</span>
+          <span className="text-[#4548ecff]">&lt;</span>
           <span className="text-white">Satya</span>
-          <span className="text-[#8245ec]">/</span>
+          <span className="text-[#4548ecff]">/</span>
           <span className="text-white">Sudheer</span>
-          <span className="text-[#8245ec]">&gt;</span>
+          <span className="text-[#4548ecff]">&gt;</span>
         </div>
 
  
@@ -69,8 +69,8 @@ const Navbar = () => {
             <li key={item.id}>
               <button
                 onClick={() => handleMenuItemClick(item.id)}
-                className={`hover:text-[#8245ec] transition ${
-                  activeSection === item.id ? "text-[#8245ec] font-semibold" : ""
+                className={`hover:text-[#4548ecff] transition ${
+                  activeSection === item.id ? "text-[#4548ecff] font-semibold" : ""
                 }`}
               >
                 {item.label}
@@ -85,7 +85,7 @@ const Navbar = () => {
             href="https://github.com/Sudheerpithani"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
+            className="text-gray-300 hover:text-[#4548ecff]"
           >
             <FaGithub size={24} />
           </a>
@@ -93,7 +93,7 @@ const Navbar = () => {
             href="https://www.linkedin.com/in/sudheer-pithani-564806322"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
+            className="text-gray-300 hover:text-[#4548ecff]"
           >
             <FaLinkedin size={24} />
           </a>
@@ -102,12 +102,12 @@ const Navbar = () => {
         <div className="md:hidden">
           {isOpen ? (
             <FiX
-              className="text-3xl text-[#8245ec] cursor-pointer"
+              className="text-3xl text-[#4548ecff] cursor-pointer"
               onClick={() => setIsOpen(false)}
             />
           ) : (
             <FiMenu
-              className="text-3xl text-[#8245ec] cursor-pointer"
+              className="text-3xl text-[#4548ecff] cursor-pointer"
               onClick={() => setIsOpen(true)}
             />
           )}
@@ -123,7 +123,7 @@ const Navbar = () => {
                 <button
                   onClick={() => handleMenuItemClick(item.id)}
                   className={`hover:text-white ${
-                    activeSection === item.id ? "text-[#8245ec] font-semibold" : ""
+                    activeSection === item.id ? "text-[#4548ecff] font-semibold" : ""
                   }`}
                 >
                   {item.label}

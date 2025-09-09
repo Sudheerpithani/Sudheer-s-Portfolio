@@ -21,7 +21,7 @@ const About = () => {
           Satya Sudheer
           </h2>
 
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#4548ecff] leading-tight">
             <span className="text-white">I am a </span>
             <ReactTypingEffect
               text={[
@@ -35,7 +35,7 @@ const About = () => {
               typingDelay={500}
               eraseDelay={2000}
               cursorRenderer={(cursor) => (
-                <span className="text-[#8245ec]">{cursor}</span>
+                <span className="text-[#4548ecff]">{cursor}</span>
               )}
             />
           </h3>
@@ -50,8 +50,8 @@ const About = () => {
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
-              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
+              background: 'linear-gradient(90deg, #4548ecff, #4548ecff)',
+              boxShadow: '0 0 2px #4548ecff, 0 0 2px #4548ecff, 0 0 40px #4548ecff',
             }}
           >
             DOWNLOAD CV
@@ -61,7 +61,7 @@ const About = () => {
 
         <div className="md:w-1/2 flex justify-center md:justify-end">
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-blue-700 rounded-full"
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             perspective={1000}

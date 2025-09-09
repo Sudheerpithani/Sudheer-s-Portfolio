@@ -32,6 +32,7 @@ import godiLogo from './assets/education_logo/godischool.jpg';
 import todoLogo from './assets/work_logo/todo.png';
 import Complaint_Care from './assets/work_logo/Complaint_Care.png';
 import Weather_App from './assets/work_logo/Weather_App.png';
+import sms from './assets/work_logo/sms.jpg';
 
 
 // Certificates Section Logo's
@@ -40,7 +41,6 @@ import jsCert from './assets/certificates/javascript_intermediate_certificate.jp
 import frontendCert from './assets/certificates/Introduction_to_Front_End_Development.jpg';
 import htmlCert from './assets/certificates/HTML.jpg';
 import cssCert from './assets/certificates/css_certificate.jpg';
-import aiMlCert from './assets/Certificates/AI&ML_Intren.jpg';
 
 
 export const SkillsInfo = [
@@ -178,6 +178,16 @@ export const SkillsInfo = [
       github: "https://github.com/Sudheerpithani/Weather_App",
       webapp: "https://sudheerpithani.github.io/Weather_App/",
     },
+    {
+      id: 3,
+      title: "Staff Management System",
+      description:
+        "Developed a Application where admin can add and manage staff, salaries, attendance, and send notifications.",
+      image: sms,
+      tags: ["HTML","CSS","Javascript","PHP","MySql"],
+      github: "https://github.com/Sudheerpithani/Staff_Management_System",
+      webapp: "",
+    },
   ];  
 
 export const certificates = [
@@ -215,12 +225,5 @@ export const certificates = [
     issuer: "HackerRank",
     image: cssCert,
     link: "https://www.hackerrank.com/certificates/25a3913e5ff7",
-  },
-  {
-    id: 6,
-    title: "AI & ML Internship",
-    issuer: "SkillDzire",
-    image: aiMlCert,
-    link: "",
   }
 ];
